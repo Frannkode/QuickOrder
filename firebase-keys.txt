@@ -1,0 +1,21 @@
+# Firebase Configuration Keys
+# Copy these to your .env.local file or Vercel environment variables
+
+VITE_FIREBASE_API_KEY=AIzaSyCq5GLb7HGR4lV_pWwLsyaERHK2Byn6-CU
+VITE_FIREBASE_AUTH_DOMAIN=bazar-2432d.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=bazar-2432d
+VITE_FIREBASE_STORAGE_BUCKET=bazar-2432d.firebasestorage.app
+VITE_FIREBASE_MESSAGING_SENDER_ID=729565128774
+VITE_FIREBASE_APP_ID=1:729565128774:web:7366c4ebd6adf1bc840247
+VITE_FIREBASE_MEASUREMENT_ID=G-NBZPXVHCLN
+
+# Original Firebase Config Object:
+const firebaseConfig = {
+  apiKey: "AIzaSyCq5GLb7HGR4lV_pWwLsyaERHK2Byn6-CU",
+  authDomain: "bazar-2432d.firebaseapp.com",
+  projectId: "bazar-2432d",
+  storageBucket: "bazar-2432d.firebasestorage.app",
+  messagingSenderId: "729565128774",
+  appId: "1:729565128774:web:7366c4ebd6adf1bc840247",
+  measurementId: "G-NBZPXVHCLN"
+};

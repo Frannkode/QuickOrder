@@ -3,13 +3,13 @@ import { getFirestore } from "firebase/firestore";
 
 // Configuración de tu proyecto "bazar-2432d"
 const firebaseConfig = {
-  apiKey: "AIzaSyCq5GLb7HGR4lV_pWwLsyaERHK2Byn6-CU",
-  authDomain: "bazar-2432d.firebaseapp.com",
-  projectId: "bazar-2432d",
-  storageBucket: "bazar-2432d.firebasestorage.app",
-  messagingSenderId: "729565128774",
-  appId: "1:729565128774:web:7366c4ebd6adf1bc840247",
-  measurementId: "G-NBZPXVHCLN"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 let app: any;

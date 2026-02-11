@@ -1,0 +1,17 @@
+# Environment Variables for Vercel Deployment
+# Copy these to your Vercel project settings under Environment Variables
+
+VITE_FIREBASE_API_KEY=your_firebase_api_key_here
+VITE_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+VITE_FIREBASE_APP_ID=your_app_id
+
+# Instructions:
+# 1. Go to your Firebase Console (https://console.firebase.google.com/)
+# 2. Select your project
+# 3. Go to Project Settings > General > Your apps
+# 4. Copy the values from the Firebase config object
+# 5. Paste them into the Vercel Environment Variables section
+# 6. Redeploy your Vercel app
