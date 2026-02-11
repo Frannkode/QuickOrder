@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuickOrder - Sistema de Pedidos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                50: '#effef4',
+                100: '#d9fce5',
+                200: '#b5f8cf',
+                300: '#7eedaf',
+                400: '#42db89',
+                500: '#1abf66',
+                600: '#0f9a4f', 
+                700: '#107b42',
+                800: '#126138',
+                900: '#105030',
+              }
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out',
+              'slide-up': 'slideUp 0.4s ease-out',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              slideUp: {
+                '0%': { transform: 'translateY(20px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        -webkit-tap-highlight-color: transparent;
+        background-color: #f8fafc;
+        background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+        background-size: 24px 24px;
+      }
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react/": "https://esm.sh/react@18.2.0/",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "lucide-react": "https://esm.sh/lucide-react@0.344.0",
+    "firebase/app": "https://esm.sh/firebase@10.12.4/app",
+    "firebase/firestore": "https://esm.sh/firebase@10.12.4/firestore",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "firebase/": "https://esm.sh/firebase@^12.9.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-50 text-gray-900 antialiased selection:bg-brand-200 selection:text-brand-900">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
