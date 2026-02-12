@@ -5,7 +5,7 @@ import {
   Plus, Minus, Eye, X, Filter, DollarSign, Package, Clock, TrendingUp, 
   Calendar, MapPin, Phone, FileText, ChevronRight, Boxes, Store, Star
 } from 'lucide-react';
-import { MOCK_PRODUCTS, STORE_CONFIG, CATEGORIES } from './constants';
+import { PRODUCTS, STORE_CONFIG, CATEGORIES } from './constants';
 import { Product, CartItem, CustomerInfo, Order, OrderStatus } from './types';
 import { ProductCard } from './components/ProductCard';
 import { Button } from './components/Button';
@@ -110,7 +110,7 @@ export default function App() {
 
   // --- Filter Logic ---
   const filteredProducts = useMemo(() => {
-    let result = MOCK_PRODUCTS;
+    let result = PRODUCTS;
     if (selectedCategory !== 'Todos') {
       result = result.filter(p => p.category === selectedCategory);
     }
@@ -585,7 +585,7 @@ export default function App() {
         </div>
 
         <form onSubmit={handleSubmit} className="bg-white p-8 rounded-3xl shadow-xl shadow-gray-200/50 border border-gray-100 space-y-6 relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-400 to-teal-400"></div>
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-400 to-brand-500"></div>
           <div>
             <label className="block text-sm font-bold text-gray-700 mb-2">Nombre Completo <span className="text-red-500">*</span></label>
             <input 
@@ -890,7 +890,7 @@ export default function App() {
                                         </td>
                                         <td className="px-6 py-4">
                                             <div className="flex items-center gap-3">
-                                                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-brand-100 to-teal-100 text-brand-700 flex items-center justify-center font-bold text-xs">
+                                                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-brand-100 to-brand-200 text-brand-700 flex items-center justify-center font-bold text-xs">
                                                     {order.customer.name.charAt(0).toUpperCase()}
                                                 </div>
                                                 <div>
@@ -963,7 +963,7 @@ export default function App() {
                             <Boxes size={20} className="text-brand-600" />
                             Catálogo de Productos
                         </h3>
-                        <p className="text-sm text-gray-500 mt-1 font-medium">{MOCK_PRODUCTS.length} productos registrados</p>
+                        <p className="text-sm text-gray-500 mt-1 font-medium">{PRODUCTS.length} productos registrados</p>
                     </div>
                 </div>
                 <div className="overflow-x-auto">
@@ -978,7 +978,7 @@ export default function App() {
                             </tr>
                         </thead>
                         <tbody className="divide-y divide-gray-100">
-                            {MOCK_PRODUCTS.map(product => (
+                            {PRODUCTS.map(product => (
                                 <tr key={product.id} className="hover:bg-gray-50/50 transition-colors">
                                     <td className="px-6 py-4">
                                         <div className="flex items-center gap-4">
@@ -1033,7 +1033,7 @@ export default function App() {
                 className="flex items-center gap-3 cursor-pointer group" 
                 onClick={() => setCurrentView('CATALOG')}
             >
-              <div className="bg-gradient-to-br from-brand-600 to-teal-600 text-white font-black rounded-xl w-10 h-10 flex items-center justify-center shadow-lg shadow-brand-200 group-hover:scale-105 transition-transform">
+              <div className="bg-gradient-to-br from-brand-500 to-brand-600 text-white font-black rounded-xl w-40 h-10 flex items-center justify-center shadow-lg shadow-brand-200 group-hover:scale-105 transition-transform">
                 {STORE_CONFIG.logoText}
               </div>
               <div>
