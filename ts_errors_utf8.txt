@@ -1,0 +1,2 @@
+﻿src/pages/CatalogPage.tsx(31,5): error TS2304: Cannot find name 'useEffect'.
+src/store/useProductStore.ts(33,9): error TS2353: Object literal may only specify known properties, and 'images' does not exist in type 'Product'.

@@ -1,0 +1,11 @@
+﻿src/pages/CatalogPage.tsx(5,28): error TS2307: Cannot find module '../../store/useUIStore' or its corresponding type declarations.
+src/pages/CatalogPage.tsx(6,29): error TS2307: Cannot find module '../../components/ProductCard' or its corresponding type declarations.
+src/pages/CatalogPage.tsx(7,33): error TS2307: Cannot find module '../../store/useCompareStore' or its corresponding type declarations.
+src/pages/CatalogPage.tsx(8,33): error TS2307: Cannot find module '../../store/useProductStore' or its corresponding type declarations.
+src/pages/CatalogPage.tsx(31,5): error TS2304: Cannot find name 'useEffect'.
+src/pages/WishlistPage.tsx(5,34): error TS2307: Cannot find module '../../store/useWishlistStore' or its corresponding type declarations.
+src/pages/WishlistPage.tsx(6,28): error TS2307: Cannot find module '../../store/useUIStore' or its corresponding type declarations.
+src/pages/WishlistPage.tsx(7,29): error TS2307: Cannot find module '../../components/ProductCard' or its corresponding type declarations.
+src/pages/WishlistPage.tsx(8,33): error TS2307: Cannot find module '../../store/useCompareStore' or its corresponding type declarations.
+src/pages/WishlistPage.tsx(9,33): error TS2307: Cannot find module '../../store/useProductStore' or its corresponding type declarations.
+src/store/useProductStore.ts(33,9): error TS2353: Object literal may only specify known properties, and 'image' does not exist in type 'Product'.

@@ -1,0 +1,1 @@
+﻿src/pages/admin/AdminDashboardPage.tsx(9,25): error TS2339: Property 'toggleTheme' does not exist on type 'UIState'.

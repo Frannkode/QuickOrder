@@ -42,4 +42,5 @@ export interface StoreConfig {
   openHours: string;
   logoText: string;
   adminPin: string;
+  adminEmails: string[];
 }

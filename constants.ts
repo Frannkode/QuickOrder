@@ -4,11 +4,12 @@ import productsData from './src/data/products.json';
 export const STORE_CONFIG: StoreConfig = {
   name: "Distribuidora de Vasos & Termos",
   logoText: "Muná",
-  whatsappNumber: "5491112345678", // Reemplazar con tu número real
+  whatsappNumber: "5493482232529", // Número solicitado por el usuario
   currencySymbol: "$",
   minOrderAmount: 20000, // Ajustado a un valor razonable según los precios
   openHours: "Lun-Vie: 9:00 - 18:00 | Sáb: 9:00 - 13:00",
   adminPin: "1234",
+  adminEmails: ["frannkode@gmail.com", "frannko13579@gmail.com"], // Lista blanca de correos admin
 };
 
 // Products imported from JSON file
